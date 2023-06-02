@@ -11,9 +11,8 @@ class Database:
     def __init__(self):
         global my_db, my_cursor
         file_path = os.path.join(os.path.dirname(__file__)
-                                 )+"/db_dokumen/dokumen2.db"
+                                 )+"/db_dokumen/dokumen.db"
         my_db = sqlite3.connect(os.path.realpath(file_path))
-        #my_db = sqlite3.connect(os.path.realpath("C:/Users/zoxrl/vscode/Kuliah/Semester 2/Algoritma & Pemrograman Lanjut/Tugas/P-BL/Fix/Apl/Final_Apl/db_dokumen/dokumen.db"))
         my_cursor = my_db.cursor()
 
 class Text_Search(Database):
