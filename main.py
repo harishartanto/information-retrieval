@@ -2,19 +2,14 @@ import tkinter
 from tkinter import messagebox
 from tkinter import scrolledtext
 import customtkinter
-from DatabaseSystemB import *
+from DatabaseSystem import *
 
 class App(customtkinter.CTk):
-    #WIDTH = 780
-    #HEIGHT = 520
-
     def __init__(self):
         global icon_path
         super().__init__()
 
-        #self.state("zoomed")
         self.title("Document Search")
-        #self.geometry(f"{App.WIDTH}x{App.HEIGHT}")
         icon_path = os.path.join(os.path.dirname(__file__))+"/icon.ico"
         self.iconbitmap(icon_path)
         
@@ -155,10 +150,7 @@ class App(customtkinter.CTk):
             clean_isi = list_isi[0]
 
             self.frame_top_detail = customtkinter.CTkFrame(master=top, height=50)
-            #self.frame_top_detail.grid(row=0, column=0, sticky="nswe", padx=20, pady=20)
-            
             self.frame_bottom_detail = customtkinter.CTkFrame(master=top, height=1000)
-            #self.frame_bottom_detail.grid(row=1, column=0, sticky="nswe", padx=20, pady=20)
             self.frame_top_detail.pack(padx=20, pady=(20, 10), expand=True, fill='x')
             self.frame_bottom_detail.pack(padx=20, pady=(10, 20), expand=True, fill='x')
             
