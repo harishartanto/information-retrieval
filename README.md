@@ -17,7 +17,7 @@ Follow these steps to install the project:
 1. Clone this repository to your local directory:
 
    ```bash
-   $ git clone https://github.com/username/information-retrieval.git
+   $ git clone https://github.com/harishartanto/information-retrieval.git
    ```
 
 2. Navigate to the project directory:
