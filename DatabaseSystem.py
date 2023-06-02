@@ -276,7 +276,7 @@ class Text_Search(Database):
         # Untuk setiap indeks [{}, {}] dan document (dict) {}, {} dalam tf
         for index, document in enumerate(tf):
             # Jika indeks > 0, (indeks = 0 adalah query)
-            if index > 0 :
+            if index > 0:
                 # Untuk setiap key dan value dalam document (dict) {'kata1' : 0, 'kata2' : 0}
                 for key, value in document.items():
                     # Jika value ada, maka value pada df dari key tersebut akan ditambah 1
