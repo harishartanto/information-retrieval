@@ -62,4 +62,4 @@ A scientific paper related to this project has been published in the Seminar Nas
 
 ## License
 
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+This project is licensed under the [MIT License](LICENSE). Please read the [LICENSE](LICENSE) file for more details.
